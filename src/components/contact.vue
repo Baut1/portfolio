@@ -11,12 +11,12 @@ const { t } = useI18n()
                 
                 <kinesis-element :strength="15" axis="y">
                     <a href="https://www.linkedin.com/in/juanbautistaiglesias/" target="_blank">
-                        <img src="src/assets/linkedin.png" class="btn-link" />
+                        <img src="/src/assets/linkedin.png" class="btn-link" />
                     </a>
                 </kinesis-element>
                 <kinesis-element :strength="15" axis="y">
                     <a href="https://github.com/Baut1" target="_blank">
-                        <img src="src/assets/github.png" class="btn-link" />
+                        <img src="/src/assets/github.png" class="btn-link" />
                     </a>
                 </kinesis-element>
             </div>                
