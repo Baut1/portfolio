@@ -1,0 +1,33 @@
+button:
+  about: Acerca de
+  back: Atrás
+  go: Ir
+  home: Inicio
+  toggle_dark: Alternar modo oscuro
+  toggle_langs: Change language
+  scroll: Desplazate hacia abajo
+  drag: Haz click y arrastra
+intro:
+  desc: Bienvenido a mi portfolio
+  dynamic-route: Demo de ruta dinámica
+  hi: ¡Hola, {name}!
+  aka: También conocido como
+  whats-your-name: ¿Cómo te llamas?
+projects:
+  title: Proyectos
+  note: Debido a la naturaleza del desarrollo de código abierto colaborativo, es posible que algunos enlaces no esten en funcionamiento
+contact:
+  title: Contacto
+  p1: Soy un desarrollador de software autodidacta con pasión por crear soluciones innovadoras. He adquirido una gran cantidad de conocimientos y experiencia a través de mi propio estudio y aplicación práctica. Aquí, encontrarás una colección de mis proyectos personales que muestran mis habilidades y capacidades.
+  p2: A través de
+  p3: proyecto, demostré mi habilidad para encontrar soluciones.
+  p4: proyecto me desafió a trabajar en equipo y demostró mi habilidad para trabajar bajo presión para entregar un producto de alta calidad.
+  p5: También he creado aplicaciones que están disponibles en mi repositorio de Github. estas aplicaciones incluyen
+  p6: Estas aplicaciones demuestran mi habilidad para escribir código limpio, eficiente y bien documentado, así como mi habilidad para crear interfaces amigables para el usuario.
+  p7: Mis habilidades técnicas incluyen la competencia en
+  p8: entre otros. También creo en el aprendizaje continuo y estoy buscando nuevos desafíos y oportunidades para ampliar mis conocimientos. Si tienes preguntas o deseas discutir oportunidades de colaboración, por favor no dudes en contactarme.
+  this: este
+  This: Este
+  ONG: App para ONG
+  rental: App de alojamiento
+not-found: No se ha encontrado

@@ -1,0 +1,33 @@
+button:
+  about: About
+  back: Back
+  go: GO
+  home: Home
+  toggle_dark: Toggle dark mode
+  toggle_langs: Cambiar idioma
+  scroll: Scroll down
+  drag: Click and drag
+intro:
+  desc: Welcome to my portfolio
+  dynamic-route: Demo of dynamic route
+  hi: Hi, {name}!
+  aka: Also known as
+  whats-your-name: What's your name?
+projects:
+  title: Work
+  note: Because of the nature of open-source collaborative work some links may not be working
+contact:
+  title: Contact
+  p1: I am a self-taught software developer with a passion for creating innovative solutions. I have acquired a wealth of knowledge and experience through my own study and practical application. Here, you will find a collection of my personal projects that showcase my skills and abilities.
+  p2: Through
+  p3: project, I demonstrated my ability to find solutions.
+  p4: project challenged me to work in a team and showcased my ability to work under pressure to deliver a high-quality product.
+  p5: I have also created applications that are available in my Github repository. These applications include
+  p6: These applications demonstrate my ability to write clean, efficient, and well-documented code, as well as my ability to create user-friendly interfaces.
+  p7: My technical skills include proficiency in
+  p8: among others. I also believe in continuous learning and I am seeking new challenges and opportunities to expand my knowledge. If you have any questions or would like to discuss collaboration opportunities, please feel free to contact me.
+  this: this
+  This: This
+  ONG: NGO App
+  rental: Rental App
+not-found: Not found
