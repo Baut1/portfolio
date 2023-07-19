@@ -32,8 +32,8 @@ export const createApp = ViteSSG(
     Object.values(import.meta.glob<{ install: UserModule }>('./modules/*.ts', { eager: true }))
       .forEach(i => i.install?.(ctx))
     // ctx.app.use(Previewer)
-    if (typeof window !== 'undefined') {
-    // if (ctx.isClient) {
+    // if (typeof window !== 'undefined') {
+    if (ctx.isClient) {
       // it's safe to use window now
       // const VueFullPage = require("vue-fullpage.js").default;
       ctx.app.use(VueFullPage)
