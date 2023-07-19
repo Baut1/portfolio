@@ -19,7 +19,7 @@ import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 
 import VueKinesis from "vue-kinesis";
-import { isClient } from '@vueuse/core'
+// import { isClient } from '@vueuse/core'
 
 const routes = setupLayouts(generatedRoutes)
 
@@ -32,11 +32,12 @@ export const createApp = ViteSSG(
     Object.values(import.meta.glob<{ install: UserModule }>('./modules/*.ts', { eager: true }))
       .forEach(i => i.install?.(ctx))
     // ctx.app.use(Previewer)
-    if(isClient) {
+    if (typeof window !== 'undefined') {
+      // it's safe to use window now
       // const VueFullPage = require("vue-fullpage.js").default;
       ctx.app.use(VueFullPage)
     }
-    ctx.app.use(Carousel, Slide, Pagination, Navigation)
+    ctx.app.use(Carousel, Slide, Pagination, Navigation),
     ctx.app.use(OnuUI),
     ctx.app.use(VueKinesis)
   },
