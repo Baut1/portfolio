@@ -13,7 +13,7 @@ import OnuUI from 'onu-ui'
 import 'onu-ui/dist/style.css'
 
 import 'vue-fullpage.js/dist/style.css'
-import VueFullPage from 'vue-fullpage.js'
+// import VueFullPage from 'vue-fullpage.js'
 
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
@@ -36,7 +36,10 @@ export const createApp = ViteSSG(
     // if (ctx.isClient) {
       // it's safe to use window now
       // const VueFullPage = require("vue-fullpage.js").default;
-      ctx.app.use(VueFullPage)
+      import('vue-fullpage.js').then(module => {
+        ctx.app.use(module.default)
+      })
+      // ctx.app.use(VueFullPage)
     };
     ctx.app.use(Carousel, Slide, Pagination, Navigation);
     ctx.app.use(OnuUI);
