@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // import { isClient } from "@vueuse/core";
-import { fairyDustCursor } from "cursor-effects";
+// import { fairyDustCursor } from "cursor-effects";
 
 // translate
 const { t } = useI18n()
@@ -16,7 +16,7 @@ const options = {
 
 // cursor effects
 // if (isClient) {
-  new fairyDustCursor();
+  // new fairyDustCursor();
 // }
 </script>
 
