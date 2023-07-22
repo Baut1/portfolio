@@ -8,7 +8,7 @@ const { t } = useI18n()
 const projectsList = [
     {
         title: 'Alkybank',
-        imgSrc: 'src/assets/alkybank.png',
+        imgSrc: 'https://i.ibb.co/sgbrqNH/alkybank.png',
         content: 'E-Wallet que permite integrar en el Homebanking de los clientes de AlkyBank y facilitar sus transacciones.',
         description: 'Angular, Typescript, Angular Material',
         githubUrl: 'https://github.com/Baut1/Bootcamp-Crisalis-Finnegans',
@@ -16,7 +16,7 @@ const projectsList = [
     },
     {
         title: 'Veride',
-        imgSrc: 'src/assets/veride.png',
+        imgSrc: 'https://i.ibb.co/34n5sYd/veride.png',
         content: 'Veridē es un restaurante e-commerce cuyo diferenciador es ofrecer platillos vegano-vegetarianos saludables.',
         description: 'React, JavaScript, Sass',
         githubUrl: 'https://github.com/No-Country/C4-30-front',
@@ -24,7 +24,7 @@ const projectsList = [
     },
     {
         title: 'Share',
-        imgSrc: 'src/assets/share.png',
+        imgSrc: 'https://i.ibb.co/nBqbTsQ/share.png',
         content: 'Compañero ideal es una app para alquilar departamentos o habitaciones para estudiantes.',
         description: 'Angular, TypeScript, Sass',
         githubUrl: 'https://github.com/No-Country/s3-03-t-front',
@@ -32,7 +32,7 @@ const projectsList = [
     },
     {
         title: 'Hermes',
-        imgSrc: 'src/assets/hermes.png',
+        imgSrc: 'https://i.ibb.co/YbfThMb/hermes.png',
         content: 'Servicio online que permite donar medicamentos.',
         description: 'React, JavaScript, Bootstrap',
         githubUrl: 'https://github.com/No-Country/s4-02-t-python-frontend',
