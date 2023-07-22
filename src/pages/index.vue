@@ -22,6 +22,7 @@ const options = {
 
 <template>
   <div id="app">
+    <ClientOnly>
     <full-page ref="fullpage" :options="options" id="fullpage">
       <div class="section">
         <Welcome></Welcome>
@@ -38,6 +39,7 @@ const options = {
       </div>
 
     </full-page>
+    </ClientOnly>
   </div>
 </template>
 

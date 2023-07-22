@@ -38,7 +38,7 @@ export const createApp = ViteSSG(
       // const VueFullPage = require("vue-fullpage.js").default;
       import('vue-fullpage.js').then(module => {
         ctx.app.use(module.default)
-      })
+      });
       // ctx.app.use(VueFullPage)
     };
     ctx.app.use(Carousel, Slide, Pagination, Navigation);
