@@ -37,9 +37,9 @@ export const createApp = ViteSSG(
       // it's safe to use window now
       // const VueFullPage = require("vue-fullpage.js").default;
       import('vue-fullpage.js').then(module => {
-        ctx.app.use(module.default)
+        ctx.app.use(module.default);
       });
-      // ctx.app.use(VueFullPage)
+      // ctx.app.use(VueFullPage);
     };
     ctx.app.use(Carousel, Slide, Pagination, Navigation);
     ctx.app.use(OnuUI);
