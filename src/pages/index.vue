@@ -11,7 +11,7 @@ const options = {
   anchors: ['home', 'projects', 'contact'],
   navigation: true,
   navigationTooltips: ['Home', 'Projects', 'Contact'],
-  credits: {enabled: false},
+  credits: {enabled: true}
 }
 
 // cursor effects
@@ -30,17 +30,17 @@ onMounted(() => {
   <div id="app">
     <!-- <ClientOnly> -->
     <full-page ref="fullpage" :options="options" id="fullpage" :skip-init="true">
-      <div class="section">
+      <div class="section fp-noscroll">
         <Welcome></Welcome>
       </div>
 
-      <div class="section">
+      <div class="section fp-noscroll">
         <h2 text-5xl font-700>{{ t('projects.title') }}</h2>
         <h3 text-3 pb-6>{{ t('projects.note') }}</h3>
         <ProjectsCarousel></ProjectsCarousel>
       </div>
 
-      <div class="section">
+      <div class="section fp-noscroll">
         <Contact></Contact>
       </div>
     </full-page>
