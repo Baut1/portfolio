@@ -19,28 +19,17 @@ const options = {
   // new fairyDustCursor();
 // }
 
-function reloadOnce()
-{
-  if (typeof window !== 'undefined')
-  // if( window.localStorage )
-  {
-    if( !localStorage.getItem('firstLoad') )
-    {
-      localStorage['firstLoad'] = true;
-      window.location.reload();
-    }  
-    else
-      localStorage.removeItem('firstLoad');
-  }
-}
+const fullpage = ref();
 
-reloadOnce();
+onMounted(() => {
+  fullpage.value.init();
+})
 </script>
 
 <template>
   <div id="app">
-    <ClientOnly>
-    <full-page ref="fullpage" :options="options" id="fullpage">
+    <!-- <ClientOnly> -->
+    <full-page ref="fullpage" :options="options" id="fullpage" :skip-init="true">
       <div class="section">
         <Welcome></Welcome>
       </div>
@@ -54,9 +43,8 @@ reloadOnce();
       <div class="section">
         <Contact></Contact>
       </div>
-
     </full-page>
-    </ClientOnly>
+    <!-- </ClientOnly> -->
   </div>
 </template>
 
