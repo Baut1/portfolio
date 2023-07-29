@@ -155,14 +155,14 @@ export default defineConfig({
   },
 
   // https://github.com/antfu/vite-ssg
-  ssgOptions: {
-    script: 'async',
-    formatting: 'minify',
-    onFinished() { generateSitemap() },
-  },
+  // ssgOptions: {
+  //   script: 'async',
+  //   formatting: 'minify',
+  //   onFinished() { generateSitemap() },
+  // },
 
-  ssr: {
+  // ssr: {
     // TODO: workaround until they support native ESM
-    noExternal: ['workbox-window', /vue-i18n/],
-  },
+  //   noExternal: ['workbox-window', /vue-i18n/],
+  // },
 })
