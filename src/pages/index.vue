@@ -19,17 +19,17 @@ const options = {
   // new fairyDustCursor();
 // }
 
-const fullpage = ref();
+// const fullpage = ref();
 
-onMounted(() => {
-  fullpage.value.init();
-})
+// onMounted(() => {
+//   fullpage.value.init();
+// })
 </script>
 
 <template>
   <div id="app">
     <!-- <ClientOnly> -->
-    <full-page ref="fullpage" :options="options" id="fullpage" :skip-init="true">
+    <full-page ref="fullpage" :options="options" id="fullpage">
       <div class="section">
         <Welcome></Welcome>
       </div>
