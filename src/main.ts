@@ -21,6 +21,9 @@ import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import VueKinesis from "vue-kinesis";
 // import { isClient } from '@vueuse/core'
 
+import Tetikus from '@namchee/tetikus';
+import '@namchee/tetikus/dist/tetikus.css';
+
 const routes = setupLayouts(generatedRoutes)
 
 // https://github.com/antfu/vite-ssg
@@ -44,5 +47,6 @@ export const createApp = ViteSSG(
     ctx.app.use(Carousel, Slide, Pagination, Navigation);
     ctx.app.use(OnuUI);
     ctx.app.use(VueKinesis);
+    ctx.app.use(Tetikus);
   },
 )
