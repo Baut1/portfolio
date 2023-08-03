@@ -121,7 +121,8 @@ const breakpoints = {
 }
 
 .carousel__viewport {
-  perspective: 2000px;
+  perspective: 1000px;
+  height: 65vh;
 }
 
 .carousel__track {
