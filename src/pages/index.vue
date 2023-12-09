@@ -39,9 +39,11 @@ const tetikusOptions = {
       </div>
 
       <div class="section">
-        <h2 text-5xl font-700>{{ t('projects.title') }}</h2>
-        <h3 text-3 pb-3>{{ t('projects.note') }}</h3>
-        <ProjectsCarousel></ProjectsCarousel>
+        <div>
+          <h2 text-5xl font-700>{{ t('projects.title') }}</h2>
+          <h3 text-3 pb-3>{{ t('projects.note') }}</h3>
+          <ProjectsCarousel></ProjectsCarousel>
+        </div>
       </div>
 
       <div class="section">

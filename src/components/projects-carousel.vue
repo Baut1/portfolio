@@ -2,14 +2,14 @@
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination } from 'vue3-carousel'
 
-const { t } = useI18n()
+// const { t } = useI18n()
 
 // data
 const projectsList = [
     {
         title: 'Alkybank',
         imgSrc: 'https://i.ibb.co/sgbrqNH/alkybank.png',
-        content: 'E-Wallet que permite integrar en el Homebanking de los clientes de AlkyBank y facilitar sus transacciones.',
+        content: 'E-Wallet que integra el Homebanking de los clientes de AlkyBank',
         description: 'Angular, Typescript, Angular Material',
         githubUrl: 'https://github.com/Baut1/Bootcamp-Crisalis-Finnegans',
         deployUrl: 'https://angular-deploy-ng-wallers.vercel.app/login'
@@ -17,7 +17,7 @@ const projectsList = [
     {
         title: 'Veride',
         imgSrc: 'https://i.ibb.co/34n5sYd/veride.png',
-        content: 'Veridē es un restaurante e-commerce cuyo diferenciador es ofrecer platillos vegano-vegetarianos saludables.',
+        content: 'Restaurante e-commerce que ofrece platos vegetarianos saludables.',
         description: 'React, JavaScript, Sass',
         githubUrl: 'https://github.com/No-Country/C4-30-front',
         deployUrl: 'https://veride.netlify.app/'
@@ -25,7 +25,7 @@ const projectsList = [
     {
         title: 'Share',
         imgSrc: 'https://i.ibb.co/nBqbTsQ/share.png',
-        content: 'Compañero ideal es una app para alquilar departamentos o habitaciones para estudiantes.',
+        content: 'Alquiler de departamentos y habitaciones para estudiantes y turistas.',
         description: 'Angular, TypeScript, Sass',
         githubUrl: 'https://github.com/No-Country/s3-03-t-front',
         deployUrl: 'https://share-your-room.herokuapp.com/'
@@ -33,7 +33,7 @@ const projectsList = [
     {
         title: 'Hermes',
         imgSrc: 'https://i.ibb.co/YbfThMb/hermes.png',
-        content: 'Servicio online que permite donar medicamentos.',
+        content: 'Servicio online para donar medicamentos.',
         description: 'React, JavaScript, Bootstrap',
         githubUrl: 'https://github.com/No-Country/s4-02-t-python-frontend',
         deployUrl: 'https://s4-02-t-python-frontend-n2k5b3mav-s4-02-t-python-frontend.vercel.app/'
@@ -95,20 +95,47 @@ const breakpoints = {
         </template>
     </Carousel>
 
-    <div w-xs ma>
+    <!-- <div w-xs ma>
       <o-alert type="primary" light :description="t('button.drag')" center closable />
-    </div>
+    </div> -->
 </template>
 
 <style>
 .carousel__item {
-  min-height: 200px;
-  max-width: 500px;
   border: 3px solid;
-  font-size: 20px;
+  font-size: 10px;
   border-radius: 8px;
   display: flex;
 }
+
+/* .o-card-cover {
+  height: 1vh;
+} */
+
+/* .o-card-header {
+  padding: 0 !important;
+} */
+
+/* .o-card-header-title {
+  padding-top: 5px !important;
+  font-size: 14px;
+} */
+
+.o-card-header-description {
+  /* padding-top: 0 !important;
+  padding-bottom: 0 !important; */
+  font-size: 12px !important;
+}
+
+.o-card-body {
+  /* padding-top: 5px !important; */
+  font-size: 14px !important;
+}
+
+/* .o-card-actions {
+  padding-top: 2px !important;
+  font-size: 12px !important;
+} */
 
 .carousel__slide {
   padding: 10px;
@@ -122,7 +149,7 @@ const breakpoints = {
 
 .carousel__viewport {
   perspective: 1000px;
-  height: 65vh;
+  /* height: 50vh; */
 }
 
 .carousel__track {
