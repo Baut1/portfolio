@@ -1,45 +1,53 @@
 <script setup lang="ts">
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination } from 'vue3-carousel'
+import projectsList from '../data/projectsList.json';
 
-// const { t } = useI18n()
+const { t } = useI18n();
 
 // data
-const projectsList = [
-    {
-        title: 'Alkybank',
-        imgSrc: 'https://i.ibb.co/sgbrqNH/alkybank.png',
-        content: 'E-Wallet que integra el Homebanking de los clientes de AlkyBank',
-        description: 'Angular, Typescript, Angular Material',
-        githubUrl: 'https://github.com/Baut1/Bootcamp-Crisalis-Finnegans',
-        deployUrl: 'https://angular-deploy-ng-wallers.vercel.app/login'
-    },
-    {
-        title: 'Veride',
-        imgSrc: 'https://i.ibb.co/34n5sYd/veride.png',
-        content: 'Restaurante e-commerce que ofrece platos vegetarianos saludables.',
-        description: 'React, JavaScript, Sass',
-        githubUrl: 'https://github.com/No-Country/C4-30-front',
-        deployUrl: 'https://veride.netlify.app/'
-    },
-    {
-        title: 'Share',
-        imgSrc: 'https://i.ibb.co/nBqbTsQ/share.png',
-        content: 'Alquiler de departamentos y habitaciones para estudiantes y turistas.',
-        description: 'Angular, TypeScript, Sass',
-        githubUrl: 'https://github.com/No-Country/s3-03-t-front',
-        deployUrl: 'https://share-your-room.herokuapp.com/'
-    },
-    {
-        title: 'Hermes',
-        imgSrc: 'https://i.ibb.co/YbfThMb/hermes.png',
-        content: 'Servicio online para donar medicamentos.',
-        description: 'React, JavaScript, Bootstrap',
-        githubUrl: 'https://github.com/No-Country/s4-02-t-python-frontend',
-        deployUrl: 'https://s4-02-t-python-frontend-n2k5b3mav-s4-02-t-python-frontend.vercel.app/'
-    }
-    
-];
+// const projectsList = [
+//     {
+//         title: 'Alkybank',
+//         imgSrc: 'https://i.ibb.co/sgbrqNH/alkybank.png',
+//         content: 'E-Wallet que integra el Homebanking de los clientes de AlkyBank',
+//         description: 'Angular, Typescript, Angular Material',
+//         githubUrl: 'https://github.com/Baut1/Bootcamp-Crisalis-Finnegans',
+//         deployUrl: 'https://angular-deploy-ng-wallers.vercel.app/login'
+//     },
+//     {
+//         title: 'Veride',
+//         imgSrc: 'https://i.ibb.co/34n5sYd/veride.png',
+//         content: 'Restaurante e-commerce que ofrece platos vegetarianos saludables.',
+//         description: 'React, JavaScript, Sass',
+//         githubUrl: 'https://github.com/No-Country/C4-30-front',
+//         deployUrl: 'https://veride.netlify.app/'
+//     },
+//     {
+//         title: 'Share',
+//         imgSrc: 'https://i.ibb.co/nBqbTsQ/share.png',
+//         content: 'Alquiler de departamentos y habitaciones para estudiantes y turistas.',
+//         description: 'Angular, TypeScript, Sass',
+//         githubUrl: 'https://github.com/No-Country/s3-03-t-front',
+//         deployUrl: 'https://share-your-room.herokuapp.com/'
+//     },
+//     {
+//         title: 'Hermes',
+//         imgSrc: 'https://i.ibb.co/YbfThMb/hermes.png',
+//         content: 'Servicio online para donar medicamentos.',
+//         description: 'React, JavaScript, Bootstrap',
+//         githubUrl: 'https://github.com/No-Country/s4-02-t-python-frontend',
+//         deployUrl: 'https://s4-02-t-python-frontend-n2k5b3mav-s4-02-t-python-frontend.vercel.app/'
+//     },
+//     {
+//         title: 'Portfolio',
+//         imgSrc: 'https://i.ibb.co/hRdr3G3/portfolio.png',
+//         content: 'Portfolio web',
+//         description: 'Vue, TypeScript, UnoCSS',
+//         githubUrl: 'https://github.com/Baut1/portfolio',
+//         deployUrl: 'https://bautistaiglesias.netlify.app/'
+//     }
+// ];
 
 // breakpoints
 const breakpoints = {
@@ -95,9 +103,9 @@ const breakpoints = {
         </template>
     </Carousel>
 
-    <!-- <div w-xs ma>
+    <div w-xs ma>
       <o-alert type="primary" light :description="t('button.drag')" center closable />
-    </div> -->
+    </div>
 </template>
 
 <style>
