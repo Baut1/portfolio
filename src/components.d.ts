@@ -13,6 +13,7 @@ declare module '@vue/runtime-core' {
     AppHeader: typeof import('./components/app-header.vue')['default']
     Contact: typeof import('./components/contact.vue')['default']
     Counter: typeof import('./components/counter.vue')['default']
+    Education: typeof import('./components/education.vue')['default']
     Input: typeof import('./components/input.vue')['default']
     ProjectsCarousel: typeof import('./components/projects-carousel.vue')['default']
     README: typeof import('./components/README.md')['default']

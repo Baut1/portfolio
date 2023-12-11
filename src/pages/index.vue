@@ -7,9 +7,9 @@ const { t } = useI18n()
 // fullpage.js options
 const options = {
   licenseKey: 'gplv3-license',
-  anchors: ['home', 'projects', 'contact'],
+  anchors: ['home', 'projects', 'contact', 'education'],
   navigation: true,
-  navigationTooltips: ['Home', 'Projects', 'Contact'],
+  navigationTooltips: ['Home', 'Projects', 'Contact', 'Education'],
   credits: {enabled: false}
 }
 
@@ -48,6 +48,10 @@ const tetikusOptions = {
 
       <div class="section">
         <Contact></Contact>
+      </div>
+
+      <div class="section">
+        <Education></Education>
       </div>
     </full-page>
     <!-- </ClientOnly> -->
