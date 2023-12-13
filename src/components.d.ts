@@ -12,6 +12,7 @@ declare module '@vue/runtime-core' {
     AppFooter: typeof import('./components/app-footer.vue')['default']
     AppHeader: typeof import('./components/app-header.vue')['default']
     Contact: typeof import('./components/contact.vue')['default']
+    Contributions: typeof import('./components/contributions.vue')['default']
     Counter: typeof import('./components/counter.vue')['default']
     Education: typeof import('./components/education.vue')['default']
     Input: typeof import('./components/input.vue')['default']

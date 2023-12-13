@@ -7,18 +7,18 @@ const { t } = useI18n()
 // fullpage.js options
 const options = {
   licenseKey: 'gplv3-license',
-  anchors: ['home', 'projects', 'contact', 'education'],
+  anchors: ['home', 'projects', 'contributions', 'contact', 'education'],
   navigation: true,
-  navigationTooltips: ['Home', 'Projects', 'Contact', 'Education'],
-  credits: {enabled: false}
+  navigationTooltips: ['Home', 'Projects', 'Contributions', 'Contact', 'Education'],
+  credits: { enabled: false },
 }
 
 const tetikusOptions = {
-  borderColor: "DarkSlateGray",
+  borderColor: 'DarkSlateGray',
   // buttonMap: ['left'],
   hideOnOut: true,
   invertColor: true,
-  lerp: 0.15
+  lerp: 0.15,
 }
 
 // const fullpage = ref();
@@ -26,32 +26,39 @@ const tetikusOptions = {
 // onMounted(() => {
 //   fullpage.value.init();
 // })
-
 </script>
 
 <template>
-  <tetikus :options="tetikusOptions"/>
+  <tetikus :options="tetikusOptions" />
   <div id="app">
     <!-- <ClientOnly> -->
-    <full-page ref="fullpage" :options="options" id="fullpage">
+    <full-page id="fullpage" ref="fullpage" :options="options">
       <div class="section">
-        <Welcome></Welcome>
+        <Welcome />
       </div>
 
       <div class="section">
         <div>
-          <h2 text-5xl font-700>{{ t('projects.title') }}</h2>
-          <h3 text-3 pb-3>{{ t('projects.note') }}</h3>
-          <ProjectsCarousel></ProjectsCarousel>
+          <h2 text-5xl font-700>
+            {{ t('projects.title') }}
+          </h2>
+          <h3 text-3 pb-3>
+            {{ t('projects.note') }}
+          </h3>
+          <ProjectsCarousel />
         </div>
       </div>
 
       <div class="section">
-        <Contact></Contact>
+        <Contributions />
       </div>
 
       <div class="section">
-        <Education></Education>
+        <Contact />
+      </div>
+
+      <div class="section">
+        <Education />
       </div>
     </full-page>
     <!-- </ClientOnly> -->

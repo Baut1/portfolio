@@ -1,9 +1,6 @@
 import { ViteSSG } from 'vite-ssg'
 import { setupLayouts } from 'virtual:generated-layouts'
 // import Previewer from 'virtual:vue-component-preview'
-import App from './App.vue'
-import type { UserModule } from './types'
-import generatedRoutes from '~pages'
 
 import '@unocss/reset/tailwind.css'
 import './styles/main.css'
@@ -16,13 +13,18 @@ import 'vue-fullpage.js/dist/style.css'
 import VueFullPage from 'vue-fullpage.js'
 
 import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
 
-import VueKinesis from "vue-kinesis";
+import VueKinesis from 'vue-kinesis'
 // import { isClient } from '@vueuse/core'
 
-import Tetikus from '@namchee/tetikus';
-import '@namchee/tetikus/dist/tetikus.css';
+import Tetikus from '@namchee/tetikus'
+import '@namchee/tetikus/dist/tetikus.css'
+
+import VueCalendarHeatmap from 'vue3-calendar-heatmap'
+import type { UserModule } from './types'
+import App from './App.vue'
+import generatedRoutes from '~pages'
 
 const routes = setupLayouts(generatedRoutes)
 
@@ -42,11 +44,12 @@ export const createApp = ViteSSG(
       // import('vue-fullpage.js').then(module => {
       //   ctx.app.use(module.default);
       // });
-      ctx.app.use(VueFullPage);
+    ctx.app.use(VueFullPage)
     // };
-    ctx.app.use(Carousel, Slide, Pagination, Navigation);
-    ctx.app.use(OnuUI);
-    ctx.app.use(VueKinesis);
-    ctx.app.use(Tetikus);
+    ctx.app.use(Carousel, Slide, Pagination, Navigation)
+    ctx.app.use(OnuUI)
+    ctx.app.use(VueKinesis)
+    ctx.app.use(Tetikus)
+    ctx.app.use(VueCalendarHeatmap)
   },
 )
