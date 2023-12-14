@@ -3,7 +3,9 @@ const { t } = useI18n()
 const contributions = ref([])
 
 let arrContributions: any = [{ date: '2023-9-22', count: 6 }]
+const endDate = new Date().toISOString().split('T')[0]
 
+// color schemes
 const darkRange = ['#1f1f22', '#333333', '#1d466c', '#1d5689', '#1d69ac', '#1B95D1']
 const lightRange = ['#ebedf0', '#eeeeee', '#c0ddf9', '#73b3f3', '#3886e1', '#17459e']
 let colorRange = darkRange
@@ -23,6 +25,7 @@ getContributions()
 //     colorRange = lightRange;
 // }
 
+// check which color scheme to use
 isDark.value ? colorRange = darkRange : colorRange = lightRange
 </script>
 
@@ -31,11 +34,23 @@ isDark.value ? colorRange = darkRange : colorRange = lightRange
     <h2 text-5xl font-700>
       {{ t('contributions.title') }}
     </h2>
-    <span flex justify-center mt-6>
-      <calendar-heatmap :end-date="['2023-12-13']" :values="contributions" :range-color="colorRange" w-4xl />
-    </span>
+
+    <div flex justify-center mt-6>
+      <calendar-heatmap
+        class="calendar"
+        :end-date="endDate"
+        :values="contributions"
+        :range-color="colorRange"
+        :round="1"
+        w-4xl
+        flex
+      />
+    </div>
   </div>
 </template>
 
 <style>
+  .calendar {
+    font-size: 0.5rem;
+  }
 </style>
