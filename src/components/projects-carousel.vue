@@ -1,53 +1,10 @@
 <script setup lang="ts">
 import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Slide, Pagination } from 'vue3-carousel'
-import projectsList from '../data/projectsList.json';
+import { Carousel, Pagination, Slide } from 'vue3-carousel'
+import projectsList from '../data/projectsList.json'
 
-const { t } = useI18n();
-
-// data
-// const projectsList = [
-//     {
-//         title: 'Alkybank',
-//         imgSrc: 'https://i.ibb.co/sgbrqNH/alkybank.png',
-//         content: 'E-Wallet que integra el Homebanking de los clientes de AlkyBank',
-//         description: 'Angular, Typescript, Angular Material',
-//         githubUrl: 'https://github.com/Baut1/Bootcamp-Crisalis-Finnegans',
-//         deployUrl: 'https://angular-deploy-ng-wallers.vercel.app/login'
-//     },
-//     {
-//         title: 'Veride',
-//         imgSrc: 'https://i.ibb.co/34n5sYd/veride.png',
-//         content: 'Restaurante e-commerce que ofrece platos vegetarianos saludables.',
-//         description: 'React, JavaScript, Sass',
-//         githubUrl: 'https://github.com/No-Country/C4-30-front',
-//         deployUrl: 'https://veride.netlify.app/'
-//     },
-//     {
-//         title: 'Share',
-//         imgSrc: 'https://i.ibb.co/nBqbTsQ/share.png',
-//         content: 'Alquiler de departamentos y habitaciones para estudiantes y turistas.',
-//         description: 'Angular, TypeScript, Sass',
-//         githubUrl: 'https://github.com/No-Country/s3-03-t-front',
-//         deployUrl: 'https://share-your-room.herokuapp.com/'
-//     },
-//     {
-//         title: 'Hermes',
-//         imgSrc: 'https://i.ibb.co/YbfThMb/hermes.png',
-//         content: 'Servicio online para donar medicamentos.',
-//         description: 'React, JavaScript, Bootstrap',
-//         githubUrl: 'https://github.com/No-Country/s4-02-t-python-frontend',
-//         deployUrl: 'https://s4-02-t-python-frontend-n2k5b3mav-s4-02-t-python-frontend.vercel.app/'
-//     },
-//     {
-//         title: 'Portfolio',
-//         imgSrc: 'https://i.ibb.co/hRdr3G3/portfolio.png',
-//         content: 'Portfolio web',
-//         description: 'Vue, TypeScript, UnoCSS',
-//         githubUrl: 'https://github.com/Baut1/portfolio',
-//         deployUrl: 'https://bautistaiglesias.netlify.app/'
-//     }
-// ];
+// I18n
+const { t } = useI18n()
 
 // breakpoints
 const breakpoints = {
@@ -59,56 +16,63 @@ const breakpoints = {
     itemsToShow: 2,
   },
   1200: {
-    itemsToShow: 3
-  }
+    itemsToShow: 3,
+  },
 }
 </script>
 
 <template>
-    <Carousel :items-to-show="1.5" :wrap-around="true" :breakpoints="breakpoints">
-        <Slide v-for="slide in projectsList" :key="slide">
-        <div flex flex-col class="carousel__item">
-          <o-card
+  <Carousel :items-to-show="1.5" :wrap-around="true" :breakpoints="breakpoints">
+    <Slide v-for="slide in projectsList" :key="slide">
+      <div flex flex-col class="carousel__item">
+        <o-card
           :cover="`${slide.imgSrc}`"
           :title="`${slide.title}`"
           :description="`${slide.description}`"
           :content="`${slide.content}`"
           divider
           class="not-selectable"
-          >
-            <template #actions>
-              <div fbc un-children="flex items-center gap-2">
-                <div gap-4>
-                  <div o-info>
-                    <o-button :to="slide.githubUrl" target=”_blank”>
-                      <o-icon o-primary name="i-carbon-logo-github"></o-icon>
-                      Repo
-                    </o-button>
-                  </div>
-                  <div o-info>
-                    <o-button :to="slide.deployUrl" target=”_blank”>
-                      <o-icon o-primary name="i-carbon-application-web"></o-icon>
-                      Deploy
-                    </o-button>
-                  </div>
+        >
+          <template #actions>
+            <div fbc un-children="flex items-center gap-2">
+              <div gap-4>
+                <div o-info>
+                  <o-button :to="slide.githubUrl" target="”_blank”">
+                    <o-icon o-primary name="i-carbon-logo-github" />
+                    Repo
+                  </o-button>
+                </div>
+                <div o-info>
+                  <o-button :to="slide.deployUrl" target="”_blank”">
+                    <o-icon o-primary name="i-carbon-application-web" />
+                    Deploy
+                  </o-button>
                 </div>
               </div>
-            </template>
-          </o-card>
-        </div>
-        </Slide>
+            </div>
+          </template>
+        </o-card>
+      </div>
+    </Slide>
 
-        <template #addons>
-          <Pagination />
-        </template>
-    </Carousel>
+    <template #addons>
+      <Pagination />
+    </template>
+  </Carousel>
 
-    <div w-xs ma>
-      <o-alert type="primary" light :description="t('button.drag')" center closable />
-    </div>
+  <!-- carousel drag tip -->
+  <div w-xs position-absolute bottom-4 class="tip-container">
+    <o-alert type="primary" light :description="t('button.drag')" center closable />
+  </div>
 </template>
 
 <style>
+.tip-container {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* carousel css */
 .carousel__item {
   border: 3px solid;
   font-size: 10px;
@@ -157,7 +121,6 @@ const breakpoints = {
 
 .carousel__viewport {
   perspective: 1000px;
-  /* height: 50vh; */
 }
 
 .carousel__track {
