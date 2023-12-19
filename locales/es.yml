@@ -20,6 +20,9 @@ education:
   title: Educacion
   degree-name: Técnico superior en desarrollo de software
   degree-study-plan: Plan de estudios
+  degree-overview: Visión general
+  degree-institution: Institución
+  graduate-profile: El Técnico Superior en Desarrollo de Software estará capacitado para producir artefactos de software, lo que comprende su diseño detallado, construcción reutilizando elementos existentes o programándolos enteramente, y verificación unitaria, así como su depuración, optimización y mantenimiento. Este técnico podrá desempeñarse en organizaciones de diversos tipos; empresas que realizan desarrollo de software por encargo de organizaciones locales o extranjeras, que proveen software junto con otros servicios de asesoramiento y consultoría, y, en menor número, que desarrollan sus propios productos de software para vender en el país o en el exterior.
 contributions:
   title: Contribuciones
 contact:
