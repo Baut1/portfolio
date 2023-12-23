@@ -12,6 +12,8 @@ import 'onu-ui/dist/style.css'
 import 'vue-fullpage.js/dist/style.css'
 import VueFullPage from 'vue-fullpage.js'
 
+import VueProgressBar from '@aacassandra/vue3-progressbar'
+
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
 
@@ -27,6 +29,21 @@ import App from './App.vue'
 import generatedRoutes from '~pages'
 
 const routes = setupLayouts(generatedRoutes)
+
+// progressbar options
+const options = {
+  color: '#03fc84',
+  failedColor: '#874b4b',
+  thickness: '5px',
+  transition: {
+    speed: '0.2s',
+    opacity: '0.6s',
+    termination: 300,
+  },
+  autoRevert: true,
+  location: 'top',
+  inverse: false,
+}
 
 // https://github.com/antfu/vite-ssg
 export const createApp = ViteSSG(
@@ -46,6 +63,7 @@ export const createApp = ViteSSG(
       // });
     ctx.app.use(VueFullPage)
     // };
+    ctx.app.use(VueProgressBar, options)
     ctx.app.use(Carousel, Slide, Pagination, Navigation)
     ctx.app.use(OnuUI)
     ctx.app.use(VueKinesis)
