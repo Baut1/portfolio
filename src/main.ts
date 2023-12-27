@@ -23,6 +23,9 @@ import VueKinesis from 'vue-kinesis'
 import Tetikus from '@namchee/tetikus'
 import '@namchee/tetikus/dist/tetikus.css'
 
+import Particles from '@tsparticles/vue3'
+import { loadSlim } from '@tsparticles/slim'
+
 import VueCalendarHeatmap from 'vue3-calendar-heatmap'
 import type { UserModule } from './types'
 import App from './App.vue'
@@ -69,5 +72,11 @@ export const createApp = ViteSSG(
     ctx.app.use(VueKinesis)
     ctx.app.use(Tetikus)
     ctx.app.use(VueCalendarHeatmap)
+    ctx.app.use(Particles, {
+      init: async (engine) => {
+        // await loadFull(engine); // you can load the full tsParticles library from "tsparticles" if you need it
+        await loadSlim(engine) // or you can load the slim version from "@tsparticles/slim" if don't need Shapes or Animations
+      },
+    })
   },
 )
