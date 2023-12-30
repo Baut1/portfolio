@@ -37,7 +37,7 @@ const particlesLoaded = async (container: any) => {
         },
         opacity: 0,
       },
-      fpsLimit: 120,
+      fpsLimit: 90,
       interactivity: {
         events: {
           onClick: {
@@ -57,10 +57,10 @@ const particlesLoaded = async (container: any) => {
             size: 40,
           },
           push: {
-            quantity: 4,
+            quantity: 3,
           },
           repulse: {
-            distance: 200,
+            distance: 150,
             duration: 0.4,
           },
         },
@@ -81,14 +81,14 @@ const particlesLoaded = async (container: any) => {
           enable: true,
           outModes: 'bounce',
           random: false,
-          speed: 6,
+          speed: 5,
           straight: false,
         },
         number: {
           density: {
             enable: true,
           },
-          value: 80,
+          value: 60,
         },
         opacity: {
           value: 0.5,
