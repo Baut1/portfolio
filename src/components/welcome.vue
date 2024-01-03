@@ -42,11 +42,11 @@ const particlesLoaded = async (container: any) => {
         events: {
           onClick: {
             enable: true,
-            mode: 'push',
+            mode: 'repulse',
           },
           onHover: {
             enable: true,
-            mode: 'repulse',
+            mode: 'slow',
           },
         },
         modes: {
@@ -60,7 +60,7 @@ const particlesLoaded = async (container: any) => {
             quantity: 3,
           },
           repulse: {
-            distance: 150,
+            distance: 250,
             duration: 0.4,
           },
         },
