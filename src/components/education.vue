@@ -15,7 +15,7 @@ const organizationLink = 'https://agenciadeaprendizaje.bue.edu.ar/curso/tecnicat
 
       <div flex justify-around mt-6>
         <kinesis-element :strength="15" axis="y" w-4xl self-center>
-          <o-card :title="t('education.degree-name')" description="IFTS N° 16 - Ciudad Autónoma de Buenos Aires" divider shadow="always">
+          <o-card :title="`${t('education.degree-name')} (2023 - 2025)`" description="IFTS N° 16 - Ciudad Autónoma de Buenos Aires" divider shadow="always">
             {{ t('education.graduate-profile') }}
 
             <template #actions>
