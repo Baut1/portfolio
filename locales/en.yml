@@ -18,11 +18,19 @@ projects:
   note: Because of the nature of open-source collaborative work some links may not be working
 education:
   title: Education
-  degree-name: Advanced Technician in Software Development
-  degree-study-plan: Career study plan
+  degree-study-plan: Career plan
   degree-overview: Overview
   degree-institution: Institution
-  graduate-profile: The Senior Technician in Software Development will be trained to produce software artifacts, which includes their detailed design, construction by reusing existing elements or programming them entirely, and unit verification, as well as their debugging, optimization and maintenance. This technician may work in organizations of various types; companies that carry out software development on behalf of local or foreign organizations, that provide software along with other advisory and consulting services, and, to a lesser extent, that develop their own software products for sell in the country or abroad.
+  diploma:
+    degree-name: Angular Training Certificate
+    graduate-profile: Emphasizing teamwork to develop a functional application. The focus included advanced use of TypeScript, modular design with components, service integration, and efficient route management.
+  advanced:
+    degree-name: IT Bootcamp Angular Certificate
+    graduate-profile: Certifies skills in developing scalable applications with Angular. Through a collaborative project, interactive interfaces, component communication, and efficient architectures were addressed.
+  associate:
+    degree-name: Advanced Technician in Software Development
+    graduate-profile: The Senior Technician in Software Development will be trained to produce software artifacts, which includes their detailed design, construction by reusing existing elements or programming them entirely, and unit verification, as well as their debugging, optimization and maintenance. This technician may work in organizations of various types; companies that carry out software development on behalf of local or foreign organizations, that provide software along with other advisory and consulting services, and, to a lesser extent, that develop their own software products for sell in the country or abroad.
+
 contributions:
   title: Contributions
 contact:

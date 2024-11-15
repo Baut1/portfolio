@@ -18,11 +18,19 @@ projects:
   note: Debido a la naturaleza del desarrollo de código abierto colaborativo, es posible que algunos enlaces no esten en funcionamiento
 education:
   title: Educacion
-  degree-name: Técnico superior en desarrollo de software
   degree-study-plan: Plan de estudios
   degree-overview: Visión general
   degree-institution: Institución
-  graduate-profile: El Técnico Superior en Desarrollo de Software estará capacitado para producir artefactos de software, lo que comprende su diseño detallado, construcción reutilizando elementos existentes o programándolos enteramente, y verificación unitaria, así como su depuración, optimización y mantenimiento. Este técnico podrá desempeñarse en organizaciones de diversos tipos; empresas que realizan desarrollo de software por encargo de organizaciones locales o extranjeras, que proveen software junto con otros servicios de asesoramiento y consultoría, y, en menor número, que desarrollan sus propios productos de software para vender en el país o en el exterior.
+  diploma:
+    degree-name: Certificado SkillUp en Angular
+    graduate-profile: Certificado de formación en Angular, donde se priorizó el trabajo en equipo para crear una aplicacion funcional. El enfoque incluyó el uso avanzado de TypeScript, diseño modular con componentes, integración de servicios y gestión eficiente de rutas.
+  advanced:
+    degree-name: Certificado IT Bootcamp Angular
+    graduate-profile: Certifica habilidades en el desarrollo de aplicaciones escalables con Angular. Mediante un proyecto colaborativo, se abordaron interfaces interactivas, comunicación entre componentes y arquitecturas eficientes.
+  associate:
+    degree-name: Técnico superior en desarrollo de software
+    graduate-profile: El Técnico Superior en Desarrollo de Software estará capacitado para producir artefactos de software, lo que comprende su diseño detallado, construcción reutilizando elementos existentes o programándolos enteramente, y verificación unitaria, así como su depuración, optimización y mantenimiento. Este técnico podrá desempeñarse en organizaciones de diversos tipos; empresas que realizan desarrollo de software por encargo de organizaciones locales o extranjeras, que proveen software junto con otros servicios de asesoramiento y consultoría, y, en menor número, que desarrollan sus propios productos de software para vender en el país o en el exterior.
+
 contributions:
   title: Contribuciones
 contact:
