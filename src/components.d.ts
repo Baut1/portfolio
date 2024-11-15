@@ -15,6 +15,7 @@ declare module '@vue/runtime-core' {
     Contributions: typeof import('./components/contributions.vue')['default']
     Counter: typeof import('./components/counter.vue')['default']
     Education: typeof import('./components/education.vue')['default']
+    GoalProgressbar: typeof import('./components/goal-progressbar.vue')['default']
     Input: typeof import('./components/input.vue')['default']
     ProjectsCarousel: typeof import('./components/projects-carousel.vue')['default']
     README: typeof import('./components/README.md')['default']

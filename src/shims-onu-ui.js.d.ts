@@ -1,0 +1,2 @@
+declare module 'onu-ui';
+  
